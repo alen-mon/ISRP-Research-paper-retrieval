@@ -1,0 +1,16 @@
+arxiv
+pymongo
+fastapi~=0.99.1
+requests~=2.31.0
+PyPDF2
+text-preprocessing
+python-dotenv~=0.21.1
+black
+isort
+tensorflow~=2.0
+gensim
+uvicorn[standard]
+torch~=2.0.0
+transformers~=4.39.1
+starlette~=0.27.0
+pydantic~=1.10.8

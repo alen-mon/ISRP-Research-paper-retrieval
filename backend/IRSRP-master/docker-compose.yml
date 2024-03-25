@@ -1,0 +1,24 @@
+version: "3.7"
+services:
+  backend_server_container:
+    image: mechy/backend-server
+    build:
+      context: .
+      dockerfile: ./server.Dockerfile
+    ports:
+      - "8000:80"
+    depends_on:
+      - mongodb_container
+
+  mongodb_container:
+    image: mongo:latest
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: alenmon2002
+      MONGO_INITDB_ROOT_PASSWORD: X9yqEcFplTqVBk7a
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data_container:/data/db
+
+volumes:
+  mongodb_data_container:
