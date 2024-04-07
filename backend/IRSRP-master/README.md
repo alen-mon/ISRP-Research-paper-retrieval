@@ -5,8 +5,7 @@
 
 4. Clone and start the front end server, and you have a UI that fetches papers for user queries.
 
-Front end:
-https://github.com/MechyX/IRSRP-FE
+
 
 ```
 IRSRP-master
